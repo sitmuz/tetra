@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TETRA | Terrific Travels</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum:wght@600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header style="border-bottom: 1px solid black">
+        <navbar class="container">
+            <div class="navbar">
+                <img class="logo" src="image/logo.png" alt="">
+                <div class="menu">
+                    <a class="menu-item" href="#hero">Home</a>
+                    <a class="menu-item" href="#package">Our Package</a>
+                    <a class="menu-item" href="#call-us">Call Us</a>
+                </div>
+            </div>   
+        </navbar>
+    </header>
+    
+    <main class="hero-wrapper">
+        <section id="hero">
+            <div class="container">
+                <div class="hero-title">
+                    <h1>Your Trusted Travel Agent's</h1>
+                    <h6>Your Happiness is Our Happiness</h6>
+                </div>                
+            </div>
+        </section>
+        <section id="about-contact">
+            <div class="container">
+                <div class="about-contact">
+                    <div class="about">
+                        <img class="img-slideshow"  id="about-image" src="http://res.cloudinary.com/worldpackers/image/upload/c_fill,f_auto,q_auto,w_1024/v1/guides/article_cover/pxutrrxynm6aegghgsoy" alt="">
+                        <img class="img-slideshow"  id="about-image" src="http://res.cloudinary.com/worldpackers/image/upload/c_limit,f_auto,q_auto,w_1140/f2v8cxvsbrbzpi6iuup7" alt="">
+                        <img class="img-slideshow"  id="about-image" src="https://res.cloudinary.com/worldpackers/image/upload/c_limit,f_auto,q_auto,w_1140/rbjwdvjjtmgbzrbybxoj" alt="">
+                        
+                        <script>
+                            var slideIndex = 1;
+                            showDivs(slideIndex);
+                    
+                            function plusDivs(n) {
+                              showDivs((slideIndex += n));
+                            }
+                    
+                            function showDivs(n) {
+                              var i;
+                              var imgList = document.getElementsByClassName("img-slideshow");
+                              if (n > imgList.length) slideIndex = 1;
+                              else if (n < 1) slideIndex = imgList.length;
+                    
+                              for (i = 0; i < imgList.length; i++) {
+                                imgList[i].style.display = "none";
+                              }
+                    
+                              imgList[slideIndex - 1].style.display = "block";
+                            }
+                    
+                            setInterval(() => {
+                              plusDivs(1);
+                            }, 1500);
+                          </script>
+
+                        <div class="about-content">
+                            <div class="content-caption">
+                                <i>A terrific travel with my travel agent </i>
+                            </div>
+                            <div class="content-person">
+                                <img src="http://placekitten.com/50/50" alt="">
+                                <div class="person-info">
+                                    <h6>Mr.Felix</h6>
+                                    <p>Muggle</p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="border" />
+                        <div class="about-information">
+                            <h6 class="information-title">We exist to help people to do more, and be more, through travel. We believe that the benefits of travel go way 
+                                beyond your holiday - both for you, the traveler, and for the local communities we support. Our mission is to share with you the world of 
+                                possibility we have discovered. Here is a flavour of what we could organise for you</h6>
+                            <ul class="information-list">
+                                <li>
+                                    <div class="list-number">1</div>
+                                    <p class="list-paragraph">Eat like a Local<br/>
+                                        It’s always a pleasure to get straight into some tasty local cuisine. </p>
+                                </li>
+                                <li>
+                                    <div class="list-number">2</div>
+                                    <p class="list-paragraph">Explore in Style <br/>
+                                        Great experiences are often about seeing the sites in a different sort of way.</p>
+                                </li>
+                                <li>
+                                    <div class="list-number">3</div>
+                                    <p class="list-paragraph">Relax<br/>
+                                        We specialise in unique, hidden, boutique accommodation.  </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="contact">
+                        <div class="card">
+                            <div class="card-title">
+                                <h4>Contact Us</h4>
+                                <p>Our sales will contact you within 1x24 hours after we receive your data.</p>
+                            </div>
+                            <form action="">
+                                <div class="input">
+                                    <label for="">Your Name</label>
+                                    <input type="text" name="name" placeholder="First and last name">
+                                </div>
+                                <div class="input">
+                                    <label for="">Email Adress</label>
+                                    <input type="text" name="email" placeholder="example@email.com">
+                                </div>
+                                <div class="input">
+                                    <label for="">What are you intersted in?</label>
+                                    <select name="" id="">
+                                        <option value="">Nature</option>
+                                        <option value="">Museums</option>
+                                        <option value="">Premium Panorama Trains</option>
+                                    </select>
+                                </div>
+                                <input type="submit" value="Send">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="package">
+            <div class="package">
+                <div class="package-title">
+                    <h1>Our Package</h1>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="about-package">
+            <div class="container">
+                <div class="list-package">
+                    <div class="package-item">
+                        <div class="about-content">
+                            <div class="content-city">
+                                <div class="list-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" fill="currentColor" width="30px" height=30px>
+                                        <path
+                                            d="M281.2 248.9C295.6 228.3 304 203.2 304 176c0-70.7-57.3-128-128-128S48 105.3 48 176c0 27.2 8.4 52.3 22.8 72.9c3.7 5.3 8.1 11.3 12.8 17.7l0 0c12.9 17.7 28.3 38.9 39.8 59.8c10.4 19 15.7 38.8 18.3 57.5H93c-2.2-12-5.9-23.7-11.8-34.5c-9.9-18-22.2-34.9-34.5-51.8l0 0 0 0c-5.2-7.1-10.4-14.2-15.4-21.4C11.6 247.9 0 213.3 0 176C0 78.8 78.8 0 176 0s176 78.8 176 176c0 37.3-11.6 71.9-31.4 100.3c-5 7.2-10.2 14.3-15.4 21.4l0 0 0 0c-12.3 16.8-24.6 33.7-34.5 51.8c-5.9 10.8-9.6 22.5-11.8 34.5H210.4c2.6-18.7 7.9-38.6 18.3-57.5c11.5-20.9 26.9-42.1 39.8-59.8l0 0 0 0 0 0c4.7-6.4 9-12.4 12.7-17.7zM176 128c-26.5 0-48 21.5-48 48c0 8.8-7.2 16-16 16s-16-7.2-16-16c0-44.2 35.8-80 80-80c8.8 0 16 7.2 16 16s-7.2 16-16 16zm0 384c-44.2 0-80-35.8-80-80V416H256v16c0 44.2-35.8 80-80 80z" />
+                                    </svg>
+                                </div>
+                                <div class="city-info">
+                                    <h6>Basel</h6>
+                                    <p>A city on the Rhine River in northern Switzerland near France and Germany. Often referred to as the Cultural Capital of the country.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-content">
+                            <div class="content-city">
+                                <div class="list-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" fill="currentColor" width="30px" height=30px>
+                                        <path
+                                            d="M281.2 248.9C295.6 228.3 304 203.2 304 176c0-70.7-57.3-128-128-128S48 105.3 48 176c0 27.2 8.4 52.3 22.8 72.9c3.7 5.3 8.1 11.3 12.8 17.7l0 0c12.9 17.7 28.3 38.9 39.8 59.8c10.4 19 15.7 38.8 18.3 57.5H93c-2.2-12-5.9-23.7-11.8-34.5c-9.9-18-22.2-34.9-34.5-51.8l0 0 0 0c-5.2-7.1-10.4-14.2-15.4-21.4C11.6 247.9 0 213.3 0 176C0 78.8 78.8 0 176 0s176 78.8 176 176c0 37.3-11.6 71.9-31.4 100.3c-5 7.2-10.2 14.3-15.4 21.4l0 0 0 0c-12.3 16.8-24.6 33.7-34.5 51.8c-5.9 10.8-9.6 22.5-11.8 34.5H210.4c2.6-18.7 7.9-38.6 18.3-57.5c11.5-20.9 26.9-42.1 39.8-59.8l0 0 0 0 0 0c4.7-6.4 9-12.4 12.7-17.7zM176 128c-26.5 0-48 21.5-48 48c0 8.8-7.2 16-16 16s-16-7.2-16-16c0-44.2 35.8-80 80-80c8.8 0 16 7.2 16 16s-7.2 16-16 16zm0 384c-44.2 0-80-35.8-80-80V416H256v16c0 44.2-35.8 80-80 80z" />
+                                    </svg>
+                                </div>
+                                <div class="city-info">
+                                    <h6>Geneva</h6>
+                                    <p>A city full of history, diplomacy, and natural beauty. Explore Lake Geneva, one of Europe’s oldest Old Towns, 
+                                        and see the headquarters of the UN.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-content">
+                            <div class="content-city">
+                                <div class="list-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" fill="currentColor" width="30px" height=30px>
+                                        <path
+                                            d="M281.2 248.9C295.6 228.3 304 203.2 304 176c0-70.7-57.3-128-128-128S48 105.3 48 176c0 27.2 8.4 52.3 22.8 72.9c3.7 5.3 8.1 11.3 12.8 17.7l0 0c12.9 17.7 28.3 38.9 39.8 59.8c10.4 19 15.7 38.8 18.3 57.5H93c-2.2-12-5.9-23.7-11.8-34.5c-9.9-18-22.2-34.9-34.5-51.8l0 0 0 0c-5.2-7.1-10.4-14.2-15.4-21.4C11.6 247.9 0 213.3 0 176C0 78.8 78.8 0 176 0s176 78.8 176 176c0 37.3-11.6 71.9-31.4 100.3c-5 7.2-10.2 14.3-15.4 21.4l0 0 0 0c-12.3 16.8-24.6 33.7-34.5 51.8c-5.9 10.8-9.6 22.5-11.8 34.5H210.4c2.6-18.7 7.9-38.6 18.3-57.5c11.5-20.9 26.9-42.1 39.8-59.8l0 0 0 0 0 0c4.7-6.4 9-12.4 12.7-17.7zM176 128c-26.5 0-48 21.5-48 48c0 8.8-7.2 16-16 16s-16-7.2-16-16c0-44.2 35.8-80 80-80c8.8 0 16 7.2 16 16s-7.2 16-16 16zm0 384c-44.2 0-80-35.8-80-80V416H256v16c0 44.2-35.8 80-80 80z" />
+                                    </svg>
+                                </div>
+                                <div class="city-info">
+                                    <h6>Bern</h6>
+                                    <p>The capital city of Switzerland. Full of medieval architecture, fountains, gardens, museums, and unique landmarks. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="border" />
+                <div class="list-package">
+                    <div class="package-item">
+                        <div class="about-content">
+                            <div class="content-city">
+                                <div class="list-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 556 500" fill="currentColor" width="30px" height=30px>
+                                        <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/>
+                                    </svg>
+                                </div>
+                                <div class="city-info">
+                                    <h6>Zurich</h6>
+                                    <p>Switzerland’s largest city. It’s great for shopping, museum-hopping, and taking day trips out into small villages and nature.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-content">
+                            <div class="content-city">
+                                <div class="list-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 556 500" fill="currentColor" width="30px" height=30px>
+                                        <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/>
+                                    </svg>
+                                </div>
+                                <div class="city-info">
+                                    <h6>Interlaken</h6>
+                                    <p>A holiday resort town near the Alps. The perfect place to base yourself for adventure activities and skiing/snowboarding in the Alps.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-content">
+                            <div class="content-city">
+                                <div class="list-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 556 500" fill="currentColor" width="30px" height=30px>
+                                        <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/>
+                                    </svg>
+                                </div>
+                                <div class="city-info">
+                                    <h6>Lucerne</h6>
+                                    <p>A beautiful, peaceful, historic town on a lake. Lucerne is known for music, art, museums, and its Old Town.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="full-border" />
+        <section id="call-us">
+            <div class="container">
+                <div class="callus-headline">
+                    <h1>Let's travel to Switzerland to the fullest!</h1>
+                    <p>At Terrific Travels we create a tailor-made trips using our unparalleled knowledge and experience of the wide range of different experiences available in this beautiful country.
+                        Discover our scenic train journeys, such as the legendary Glacier Express or the fantastic Bernina Express. Treat yourself to a short break and book directly at one of over 2,000 fabulous Swiss hotels. Or choose the Swiss Travel Pass just right for you as perfect complement to your journey in Switzerland.</p>
+                <p><a href="#hero" class="callus-button">Call to Action</a>       
+                </p>
+                </div>    
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-title">
+            <h1>TERRIFIC TRAVEL </h1>
+            © 2023 S.M.S - SEFC
+        </div>
+    </footer>
+</body>
+
+</html>
